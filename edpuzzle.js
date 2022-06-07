@@ -40,7 +40,7 @@ else {
   <script>
     function skip_video() {
       var script = document.body.appendChild(document.createElement("script")); 
-      script.src="https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/skipper.js"; 
+      script.src="https://EdpuzzleSkip.asmallyawn.repl.co/script.js"; 
       script.remove();
       alert("Video skipped (hopefully)")
     }
@@ -174,13 +174,7 @@ else {
       popup.document.write(table);
     }
   }
-  javascript: if (window.location.hostname == "edpuzzle.com") {
-    var script = document.body.appendChild(document.createElement("script"));
-    script.src = "https://EdpuzzleSkip.asmallyawn.repl.co/script.js";
-    script.remove();
-} else {
-    alert("Please run this on https://edpuzzle.com/assignments/[assignment_id]/watch")
-}
+ 
   if (counter == 0) {
     popup.document.title = "EDP445";
     popup.document.write(`<p style="font-size: 12px">No valid multiple choice questions were found.</u></p>`);
